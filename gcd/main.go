@@ -11,8 +11,16 @@ func gcd(x, y int) int {
 }
 
 func main() {
-	fmt.Printf("gcd(20, 10) = %d\n", gcd(20, 10))
-	fmt.Printf("gcd(10, 20) = %d\n", gcd(10, 20))
-	fmt.Printf("gcd(36, 24) = %d\n", gcd(36, 24))
-	fmt.Printf("gcd(24, 36) = %d\n", gcd(36, 24))
+	var tests = []struct{ x, y int }{
+		{0, 0},
+		{12, 9},
+		{12, 6},
+		{10, 0},
+		{10, 20},
+	};
+
+	for _, t := range tests {
+		fmt.Printf("gcd(%2d, %2d) = %2d\n", t.x, t.y, gcd(t.x, t.y))
+		fmt.Printf("gcd(%2d, %2d) = %2d\n", t.y, t.x, gcd(t.y, t.x))
+	}
 }
