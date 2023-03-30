@@ -3,4 +3,8 @@
 [![CI](https://github.com/keithnoguchi/algorithms-go/actions/workflows/ci.yml/badge.svg)](
 https://github.com/keithnoguchi/algorithms-go/actions)
 
+## Algorithms
+
+- [A greatest common divisor](gcd/main.go)
+
 Happy Hacking!
