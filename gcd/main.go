@@ -17,7 +17,7 @@ func main() {
 		{12, 6},
 		{10, 0},
 		{10, 20},
-	};
+	}
 
 	for _, arg := range inputs {
 		fmt.Printf("gcd(%2d, %2d) = %2d\n", arg.x, arg.y, gcd(arg.x, arg.y))

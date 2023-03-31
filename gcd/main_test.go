@@ -3,9 +3,9 @@ package main
 import "testing"
 
 func TestGcd(t *testing.T) {
-	tests := []struct{
-		x int
-		y int
+	tests := []struct {
+		x    int
+		y    int
 		want int
 	}{
 		{10, 0, 10},
