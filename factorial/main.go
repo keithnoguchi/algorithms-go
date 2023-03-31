@@ -8,7 +8,7 @@ func factorial(n uint64) uint64 {
 	for i := uint64(2); i <= n; i++ {
 		x *= i
 	}
-	return x;
+	return x
 }
 
 func main() {
