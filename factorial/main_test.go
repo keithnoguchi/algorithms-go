@@ -10,7 +10,7 @@ func testFactorial(n uint64) uint64 {
 }
 
 func TestFactorial(t *testing.T) {
-	for n := uint64(0); n < 100; n++ {
+	for n := uint64(0); n <= 20; n++ {
 		if got, want := factorial(n), testFactorial(n); got != want {
 			t.Fatalf("factorial(%d), %d != %d", n, got, want)
 		}

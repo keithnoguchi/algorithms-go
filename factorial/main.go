@@ -4,14 +4,15 @@ package main
 import "fmt"
 
 func factorial(n uint64) uint64 {
-	if n < 2 {
-		return 1
+	var x uint64 = 1
+	for i := uint64(2); i <= n; i++ {
+		x *= i
 	}
-	return factorial(n - 1) * n
+	return x;
 }
 
 func main() {
-	for n := uint64(0); n < 10; n++ {
+	for n := uint64(0); n <= 20; n++ {
 		fmt.Printf("factorial(%d) = %d\n", n, factorial(n))
 	}
 }
