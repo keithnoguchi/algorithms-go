@@ -1,4 +1,4 @@
-// An insertion sort.
+// An in-place insertion sort.
 package main
 
 import "fmt"
