@@ -40,9 +40,9 @@ func appendValue(values []int, node *tree) []int {
 
 func main() {
 	var values []int
-	for i := 100_000; i >= 0; i-- {
+	for i := 10_000; i >= 0; i-- {
 		values = append(values, i)
 	}
 	Sort(values)
-	fmt.Printf("%q\n", values[len(values)-1])
+	fmt.Printf("%d\n", values[len(values)-1])
 }
